@@ -1,9 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link' // Changed from react-router-dom
-import { usePathname } from 'next/navigation' // For active link styling
-import Image from 'next/image' // Next.js Image optimization
+import Link from 'next/link' 
+import { usePathname } from 'next/navigation'
+import Image from 'next/image' 
 import { GiHamburgerMenu } from "react-icons/gi"
 import { FaRegMoon } from "react-icons/fa"
 import { MdOutlineWbSunny } from "react-icons/md"
