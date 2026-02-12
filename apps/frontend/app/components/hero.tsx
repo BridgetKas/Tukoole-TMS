@@ -26,11 +26,11 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="text-xl text-center  leading-normal  text-gray-300  mb-10 max-w-2xl md:text-[22px] lg:text-left">
+            <p className="text-xl text-center  leading-normal  text-gray-300  mb-10 max-w-2xl md:text-[22px] md:text-left lg:text-left">
              At Tukoole  we believe that talent management shouldn't feel like paperwork. We help you build the kind of culture where people do the best work of their lives.
             </p>
 
-            <div className="flex flex-col  gap-4 mb-6 sm:flex-row sm:items-start ">
+            <div className="flex flex-col   gap-4 mb-6 sm:flex-row sm:items-center sm:justify-center md:items-start md:justify-start ">
               <button className="group px-8 py-4 text-lg font-bold rounded-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1" style={{ background: '#DC4D01', color: 'white' }}>
                 Get Started
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"  className="inline-block ml-2 w-5 h-5 size-6 group-hover:translate-x-1 transition-transform">
