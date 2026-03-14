@@ -2,6 +2,7 @@ import mongoose, { Document, Schema } from 'mongoose'
 
 export interface UserI extends Document {
   fullName: string
+  field:string
   email: string
   password?: string
   phoneNumber: string
@@ -15,6 +16,11 @@ const UserSchema = new Schema<UserI>({
   fullName: {
     type: String,
     required: [true, 'Full name is required'],
+    trim: true
+  },
+   field: {
+    type: String,
+    required: [true, 'Field is required'],
     trim: true
   },
   email: {
