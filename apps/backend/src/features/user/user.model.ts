@@ -8,6 +8,7 @@ export interface UserI extends Document {
   phoneNumber: string
   yearsOfExperience: number
   cvFile?: string
+  isProfileComplete: boolean
   authProvider: 'local' | 'google'
   createdAt: Date
 }
@@ -54,7 +55,11 @@ const UserSchema = new Schema<UserI>({
       message: 'Auth provider must be either local or google'
     },
     default: 'local'
-  }
+  },
+  isProfileComplete: {
+  type: Boolean,
+  default: false
+}
 }, {
   timestamps: true
 })
