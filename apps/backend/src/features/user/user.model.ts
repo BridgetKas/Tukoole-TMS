@@ -19,11 +19,7 @@ const UserSchema = new Schema<UserI>({
     required: [true, 'Full name is required'],
     trim: true
   },
-   field: {
-    type: String,
-    required: [true, 'Field is required'],
-    trim: true
-  },
+  
   email: {
     type: String,
     required: [true, 'Email is required'],
@@ -38,12 +34,12 @@ const UserSchema = new Schema<UserI>({
   },
   phoneNumber: {
     type: String,
-    required: [true, 'Phone number is required'],
+    // required: [true, 'Phone number is required'],
     trim: true
   },
   yearsOfExperience: {
     type: Number,
-    required: [true, 'Years of experience is required']
+    // required: [true, 'Years of experience is required']
   },
   cvFile: {
     type: String
